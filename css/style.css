@@ -25,7 +25,6 @@ header {
     flex: 1;
     padding: 1em;
     border-radius: 5px;
-    background-image: url(../img/spain.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
