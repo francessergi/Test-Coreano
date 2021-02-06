@@ -166,9 +166,6 @@ function colocaAdjectius() {
     }
 }
 
-
-
-
 function colocaRespostes(param) {
     for (let index = 0; index < param.length; index++) {
         var eOpcio = document.createElement('label');
@@ -187,11 +184,23 @@ function colocaRespostes(param) {
     adjectius[0].style.border = "3px solid blue";
 }
 
+function colocaSolucio(param) {
+    for (let index = 0; index < param.length; index++) {
+        var eOpcio = document.createElement('label');
+        var opcio = document.createElement('div');
+        eOpcio.classList.add('opcio');
+        eOpcio.textContent = param[index][1];
+        opcio.appendChild(eOpcio);
+        cDreta.appendChild(opcio);
+    }
+    adjectius[0].style.border = "3px solid blue";
+}
+
 
 //6. Botó reset. Deixa tot default.
 function reset() {
     nom.value = "";
-    nota = "";
+    nota.value = "";
     missatge.textContent = "";
     for (let index = 0; index < definicions.length; index++) {
         definicions[index].textContent = "";
@@ -224,9 +233,8 @@ function avalua() {
             break;
         }
     }
-
     if (avalua) {
-        colocaRespostes(js);
+        colocaSolucio(js);
         posaNota();
     }
 }
