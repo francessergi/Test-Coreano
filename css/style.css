@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+}
+
+header {
+    padding: 2em;
+}
+
+.dades {
+    padding-bottom: 1em;
+}
+
+#test {
+    display: flex;
+}
+
+#contenidor-esquerra {
+    border: 1px solid blue;
+    flex: 1;
+    padding: 1em;
+    border-radius: 5px;
+    background-image: url(../img/spain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contenidor-esquerra div {
+    display: flex;
+}
+
+#contenidor-dret {
+    border: 1px solid green;
+    flex: 1;
+    padding: 1em;
+    border-radius: 5px;
+    background-image: url(../img/korea.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opcio {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 1em;
+    width: 100%;
+}
+
+.opcio:hover {
+    border: 2px solid tomato;
+}
+
+.adjectiu {
+    text-transform: capitalize;
+    padding: 1em;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.definicio {
+    padding: 1em;
+    border: 3px solid transparent;
+    width: 70%;
+    border-radius: 3px;
+}

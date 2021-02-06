@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen A</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="dades">
+            <h2 id="final"></h2>
+            <input type="text" name="nom" placeholder="Cognom, Nom" id="nom">
+            <input type="text" name="nota" placeholder="nota" id="nota" readonly>
+        </div>
+        <div class="botons">
+            <button class="btn btn-primary" onclick="avalua()">Avalua</button>
+            <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+        <select id="clase" class="form-control" onchange="load(this)">
+            <option value="" hidden>Selecciona test</option>
+            <option value="1">Expersiones basicas</option>
+            <option value="2">Negocios</option>
+            <option value="3">Transportes</option>
+            <option value="4">Direcciones</option>
+            <option value="5">Cifras</option>
+            <option value="6">Horario</option>
+            <option value="7">Comida</option>
+            <option value=8>Salud</option>
+        </select>
+    </header>
+    <div id="test">
+        <div id="contenidor-esquerra"></div>
+        <div id="contenidor-dret"></div>
+    </div>
+</body>
+
+</html>
+<script src="./js/app.js"></script>
